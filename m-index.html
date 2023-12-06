@@ -602,9 +602,11 @@
       }
     },2000);
 
-
+    let variabilisForPage=0;
     window.onload=function(){
-      fnTestSitu();
+      if(variabilisForPage==0){
+        fnTestSitu(variabilisForPage);
+      }
     }
   </script>
 </body>
