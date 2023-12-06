@@ -31,15 +31,15 @@ let getCookie = function(name){
 }
 
 //유저환경 확인
-function fnTestSitu(situStr){
-  let osStr=situStr;
+function fnTestSitu(){
+  let osStr=navigator.userAgent;
   let testWindow=osStr.includes('Windows');
   let testIphone=osStr.includes('iPhone');
   let testAndroid=osStr.includes('Linux');
   if(testWindow==true){
-    location.href='https://dunadan613.github.io/hollys/index.html'
+    location.href='https://dunadan613.github.io/hollys/index.html';
   }
   else if(testAndroid==true || testIphone==true){
-    location.href='https://dunadan613.github.io/hollys/m-index.html'
+    location.href='https://dunadan613.github.io/hollys/m-index.html';
   }
 }
