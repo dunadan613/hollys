@@ -602,11 +602,11 @@
       }
     },2000);
 
-    let variabilisForPage=0;
-    window.onload=function(){
-      if(variabilisForPage==0){
-        fnTestSitu(variabilisForPage);
-      }
+
+    let osStr=navigator.userAgent;
+    let testWindow=osStr.includes('Windows');
+    if(testWindow==true){
+      location.href='https://dunadan613.github.io/hollys/index.html';
     }
   </script>
 </body>

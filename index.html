@@ -818,11 +818,12 @@
       }
     }
 
-    let variabilisForPage=0;
-    window.onload=function(){
-      if(variabilisForPage==0){
-        fnTestSitu(variabilisForPage);
-      }
+
+    let osStr=navigator.userAgent;
+    let testIphone=osStr.includes('iPhone');
+    let testAndroid=osStr.includes('Linux');
+    if(testAndroid==true || testIphone==true){
+      location.href='https://dunadan613.github.io/hollys/m-index.html';
     }
   </script>
 </body>
