@@ -7,8 +7,8 @@
   <title>할리스</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-  <script src="./assets/js/jquery-3.7.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- <script src="./assets/js/jquery-3.7.1.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
   <link rel="stylesheet" href="./assets/css/popup.css">
   <style>
     :root{
@@ -368,6 +368,9 @@
       font-style: normal;
       line-height: 16px;
       margin-top: 23px;
+    }
+    .footer address strong{
+      font-weight: 700;
     }
   </style>
 </head>
@@ -813,6 +816,11 @@
       if(getCookie('close-while-day-at-desk').valueOf()=='yes'){
         fnClose(_popup);
       }
+    }
+
+
+    window.onload=function(){
+      fnTestSitu();
     }
   </script>
 </body>

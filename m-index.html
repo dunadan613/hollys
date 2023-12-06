@@ -6,8 +6,8 @@
   <title>Hollys</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-  <script src="./assets/js/jquery-3.7.1.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- <script src="./assets/js/jquery-3.7.1.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
   <link rel="stylesheet" href="./assets/css/popup.css">
   <style>
     :root{
@@ -600,8 +600,12 @@
           pagenationActive=0;
         }
       }
-    },2000)
-    //페이지네이션
+    },2000);
+
+
+    window.onload=function(){
+      fnTestSitu();
+    }
 
     //임시
     console.log();
