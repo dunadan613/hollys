@@ -1,0 +1,48 @@
+.popup{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 360px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+.popup .container{
+  position: relative;
+}
+.popup .btn-container button{
+  width: 50%;
+  border: none;
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+.popup .btn-container button:last-child{
+  font-weight: 700;
+}
+.popup .btn-popup-close{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 17px;
+  height: 17px;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+}
+.popup .btn-popup-close::before,
+.popup .btn-popup-close::after{
+  content: '';
+  display: block;
+  width: 17px;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+.popup .btn-popup-close::after{
+  transform: translate(-50%,-50%) rotate(135deg);
+}
