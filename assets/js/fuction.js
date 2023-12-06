@@ -31,7 +31,7 @@ let getCookie = function(name){
 }
 
 //유저환경 확인
-function fnTestSitu(){
+function fnTestSitu(variabilis){
   let osStr=navigator.userAgent;
   let testWindow=osStr.includes('Windows');
   let testIphone=osStr.includes('iPhone');
@@ -42,4 +42,6 @@ function fnTestSitu(){
   else if(testAndroid==true || testIphone==true){
     location.href='https://dunadan613.github.io/hollys/m-index.html';
   }
+  variabilis++;
+  return variabilis;
 }
