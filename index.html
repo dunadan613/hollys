@@ -7,6 +7,7 @@
   <title>할리스</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/skip_menu.css">
   <!-- <script src="./assets/js/jquery-3.7.1.js"></script> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
   <link rel="stylesheet" href="./assets/css/popup.css">
@@ -18,21 +19,6 @@
       line-height: 19px;
       color: #6f6f6f;
     }
-    #skip-menu a{
-      position: fixed;
-      left: 50%;
-      top: 0;
-      z-index: 2000;
-      transform: translate(-50%,-100%);
-      transition: 0.4s;
-      padding: 1em 2em;
-      background-color: #303030;
-      font-weight: 900;
-      font-size: 64px;
-      color: #f7f7f7;
-      text-align: center;
-      display: inline-block;
-    }
     #wrap{
       overflow: hidden;
       position: relative;
@@ -43,9 +29,6 @@
     }
     .popup .container{
       max-width: 360px;
-    }
-    #skip-menu a:focus{
-      transform: translateY(0%);
     }
     .header{
       border-bottom: 2px solid #ba000c;
@@ -69,14 +52,10 @@
       width: 940px;
     }
     .nav li{
-      /* width: 16.6666%; */
       width: 156px;
       height: 60px;
       position: relative;
     }
-    /* .nav li:hover{
-      background-color: #ba000c;
-    } */
     .nav li .imgbox{
       position: absolute;
       left: 50%;
@@ -84,9 +63,6 @@
       transform: translateX(-50%);
       height: 19px;
     }
-    /* .nav li .imgbox a{
-      padding-top: 16px;
-    } */
     .nav li .imgbox img{
       width: auto;
       height: 100%;
@@ -100,9 +76,6 @@
       color: transparent;
       transition: 0.2s 0.1s;
     }
-    /* .nav li:hover p{
-      color: white;
-    } */
     .nav-sub{
       display: none;
       position: absolute;
